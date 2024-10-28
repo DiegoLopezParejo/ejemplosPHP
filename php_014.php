@@ -28,11 +28,11 @@
     
     //Division entera
     $resultado = (int)($a / $b);
-    echo "(int($a / $b)es $resultado)"; 
+    echo "(int($a / $b)es $resultado) <br>"; 
 
     //Modulo es decir resto
     $resultado = $a % $b;
-    echo "El resto de $a entre $b es $resultado";
+    echo "El resto de $a entre $b es $resultado <br>";
 
     //Incrementos. Post-incremento: devuelve el valor y luego lo incrementa
     $resultado = $a++; //$resultado = $a; $resultado $a = $a + 1;
@@ -56,4 +56,24 @@
     //asignacion con operadores
     $a = 20;
     $a += 10; //$a = &a + 10;
+    echo "El valor de 20 += 10 es: $a <br>";
+
+    $a = 20;
+    $a -= 10;
+    echo "El valor de 20 -= 10 es: $a <br>";
+
+    $a = 20;
+    $a *= 10;
+    echo "El valor de 20 *= 10 es: $a <br>";
+
+    $a = 20;
+    $a /= 10;
+    echo "El valor de 20 /= 10 es: $a <br>";
+
+    //Prioridad operadores
+    $resultado = 2 + 3 * 5;
+    echo "El resultado de 2 + 3 * 5 es: $resultado <br>";
+
+    $resultado = (2 + 3) * 5;
+    echo "El resultado de (2 + 3) * 5 es: $resultado <br>";
 ?>
