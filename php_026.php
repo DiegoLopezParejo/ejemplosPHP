@@ -7,7 +7,7 @@
     $num1 = 1;
     while($num1 <= 10){
         $resultado = $num2 * $num1;
-        echo $resultado."<br>";
+        echo "$num2 x $num1 es $resultado"."<br>";
         $num1++;
     }
     $num2++;
