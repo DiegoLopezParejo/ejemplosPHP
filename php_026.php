@@ -1,6 +1,5 @@
 <?php
  //Hacer un programa que muestre las tablas de multiplicar de los numeros del 1 hasta el 10. Debe haber un encabezado <h3> dentro de cada tabla
- $num1 = 1;
  $num2 = 1;
  while($num2 <= 10){
     echo "<h3>Tabla del numero $num2</h3>";
