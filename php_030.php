@@ -8,7 +8,7 @@
             echo "El número $i es primo <br>";
             continue;
         }
-        for($j = 2; $j <= $i/2; $j++){ //El 2 y el 3 no entran en el bucle ya que no 2 <= 1 y tampoco 3 <= 1, pero el si 5 <= 2.5 
+        for($j = 2; $j <= $i/2; $j++){ //El 2 y el 3 no entran en el bucle ya que no 2 <= 1 (la mitad de 2) y tampoco 2 <= 1 (la mitad de 3), pero el si 2 <= 2.5 (2.5 la mitad de 5)
                 if($i%$j == 0){
                     break;
                 }else{
