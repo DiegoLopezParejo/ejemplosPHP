@@ -12,9 +12,14 @@ echo "<style>
         border: 2px solid green; 
         padding: 5px;
     }
+    .cuerpo{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 </style>";
 
 //Con for y poniendo bordes a la tabla, pero ahora pondremos el style en una etiqueta style aparte
+echo "<div class = 'cuerpo'>";    
     for($i = 1; $i <= 10; $i++){
         echo "<table class = 'table-container'><tr><th colspan = '5' >Tabla del $i</th></tr>";       
             for($j = 1; $j <= 10; $j++){
@@ -27,6 +32,7 @@ echo "<style>
                         <td class = 'cell'>$res</td>                    
                    </tr>";
             }
-        echo "</table><br>";        
+        echo "</table>";        
     }
+echo "</div>";
 ?>

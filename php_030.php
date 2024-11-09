@@ -8,13 +8,15 @@
             echo "El número $i es primo <br>";
             continue;
         }
-        for($j = 2; $j <= $i/2; $j++){ //El 2 y el 3 no entran en el bucle ya que no 2 <= 1 (la mitad de 2) y tampoco 2 <= 1 (la mitad de 3), pero el si 2 <= 2.5 (2.5 la mitad de 5)
-                if($i%$j == 0){
-                    break;
-                }else{
-                    echo "El numero $i es primo <br>";
-                    break;
-                }
+        $esPrimo = true; // Asumimos que $i es primo
+        for($j = 2; $j <= $i/2; $j++){
+            if($i % $j == 0){
+                $esPrimo = false; // $i no es primo
+                break; // Sale del bucle si encuentra un divisor
+            }
+        }
+        if ($esPrimo) {
+            echo "El número $i es primo <br>";
         }
     }
- ?>
+?>
