@@ -1,5 +1,5 @@
 <!-- Igual que en anterior pero comprobando si esta declarada la variable-->
-<!-- Mirar como meter con un bucle for valores en un array o con una propiedad si hay alguna-->
+<!-- Mirar como meter con un bucle for valores en un array o con una propiedad si hay alguna. Mirar si hay un Read-Host en php-->
 <?php
 $ciudades = ["Talavera"];
 
