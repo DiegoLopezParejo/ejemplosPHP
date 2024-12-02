@@ -13,7 +13,7 @@
         echo $semana[$i]. "<br>";
     }
 
-    foreach($dia as $semana){
+    foreach($semana as $dia){
         echo $dia."<br>";
     }
 ?>
